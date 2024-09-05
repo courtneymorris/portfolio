@@ -1,0 +1,121 @@
+$background-color: #18001d;
+$white: white;
+$crimson: #d91c5c;
+$indigo: #310050;
+$blue-violet: #a922ff;
+$orange-red: #f05a28;
+$gradient: -webkit-linear-gradient(
+  -86deg,
+  #f05a28 5%,
+  #d91c5c 53%,
+  #a922ff 91%
+);
+
+.container {
+  box-sizing: border-box;
+  color: $white;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.main {
+  box-sizing: border-box;
+  flex: 10;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+
+  .leftColumn {
+    max-width: 45%;
+    align-content: left;
+
+    .moonImage {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      z-index: -1;
+    }
+  }
+
+  .rightColumn {
+    width: 50%;
+    padding-right: 20px;
+
+    .intro {
+      max-width: 100%;
+      text-align: right;
+
+      .boldHeader {
+        font-size: 28px;
+        font-weight: 500;
+      }
+
+      .outlinedHeader {
+        background: $gradient;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-stroke: 5px transparent;
+        color: #18001d;
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 90px;
+        text-transform: uppercase;
+      }
+
+      .lightHeader {
+        font-size: 28px;
+        font-weight: 300;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      padding-top: 10px;
+      justify-content: right;
+
+      .resumeButton,
+      .projectsButton {
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        font-weight: 300;
+      }
+
+      .resumeButton {
+        background-color: transparent;
+        border: 2px solid $blue-violet;
+        color: $white;
+      }
+
+      .projectsButton {
+        background-color: $blue-violet;
+        border: none;
+        color: $white;
+      }
+    }
+  }
+
+  .socialIcons {
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+    justify-content: right;
+
+    .socialLinks {
+      text-decoration: none;
+      font-size: 24px;
+      color: $white;
+    }
+  }
+}
