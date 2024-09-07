@@ -15,41 +15,56 @@ $gradient: -webkit-linear-gradient(
   box-sizing: border-box;
   color: $white;
   width: 100%;
-  min-height: 100px;
+  max-width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   padding-top: 70px;
   padding-bottom: 70px;
+  overflow: hidden;
 }
 
 .main {
   box-sizing: border-box;
-  flex: 10;
+  flex: 1;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 0 20px;
   width: 100%;
+  max-width: 100%;
+  margin-top: 80px;
+  padding: 0 60px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 
   .leftColumn {
-    max-width: 45%;
-    align-content: left;
+    flex: 0 0 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 
     .moonImage {
+      display: block;
+      margin-left: 0;
+      margin-right: 0;
       width: 100%;
       height: auto;
-      object-fit: cover;
-      z-index: -1;
     }
   }
 
   .rightColumn {
-    width: 50%;
-    padding-right: 20px;
+    flex: 0 0 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 100%;
 
     .intro {
       max-width: 100%;
@@ -70,6 +85,7 @@ $gradient: -webkit-linear-gradient(
         font-weight: 700;
         line-height: 90px;
         text-transform: uppercase;
+        max-width: 100%;
       }
 
       .lightHeader {
@@ -80,9 +96,13 @@ $gradient: -webkit-linear-gradient(
 
     .buttons {
       display: flex;
+      flex-direction: row;
       gap: 20px;
       padding-top: 10px;
-      justify-content: right;
+      width: 100%;
+      max-width: 100%;
+      margin-top: auto;
+      justify-content: flex-end;
 
       .resumeButton,
       .projectsButton {
@@ -104,18 +124,22 @@ $gradient: -webkit-linear-gradient(
         color: $white;
       }
     }
-  }
 
-  .socialIcons {
-    display: flex;
-    gap: 30px;
-    padding-top: 20px;
-    justify-content: right;
+    .socialIcons {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      padding-top: 20px;
+      width: 100%;
+      max-width: 100%;
+      margin-top: auto;
+      justify-content: flex-end;
 
-    .socialLinks {
-      text-decoration: none;
-      font-size: 24px;
-      color: $white;
+      .socialLinks {
+        text-decoration: none;
+        font-size: 24px;
+        color: $white;
+      }
     }
   }
 }
