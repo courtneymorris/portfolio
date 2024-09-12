@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "../styles/Footer.module.scss";
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className="footer">
       <div>
         Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a>
       </div>

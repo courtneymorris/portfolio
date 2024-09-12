@@ -1,0 +1,81 @@
+@import "./variables.scss";
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+* {
+  &::-webkit-scrollbar {
+    height: 18px;
+    width: 18px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: #23002a;
+    &:hover {
+      background-color: #23002a;
+    }
+    &:active {
+      background-color: #23002a;
+    }
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 9px;
+    background-color: $crimson;
+    &:hover {
+      background-color: $crimson-highlight;
+    }
+    &:active {
+      background-color: $crimson-highlight;
+    }
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  color: $white;
+  overflow-x: hidden;
+}
+
+.container {
+  box-sizing: border-box;
+  position: relative;
+  color: $white;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  overflow: hidden;
+}
+
+.boldHeader {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.outlinedHeader {
+  background: $gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 5px transparent;
+  color: #18001d;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 90px;
+  text-transform: uppercase;
+  max-width: 100%;
+}
+
+.lightHeader {
+  font-size: 28px;
+  font-weight: 300;
+}
