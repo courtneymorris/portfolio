@@ -76,22 +76,24 @@ export default function Header() {
   }, [scrollPosition]);
 
   return (
-    <header className={isVisible ? "header" : "header hidden"}>
-      <div className="navigation">
-        <div className="menuIconContainer" onClick={handleMenuClick}>
-          {isMenuOpen ? (
-            <HiOutlineX className="menuIcon" />
-          ) : (
-            <HiOutlineMenu className="menuIcon" />
-          )}
-          {isMenuOpen && <Menu isMenuOpen={isMenuOpen} />}
+    <div className="container">
+      <header className={isVisible ? "header" : "header hidden"}>
+        <div className="navigation">
+          <div className="menuIconContainer" onClick={handleMenuClick}>
+            {isMenuOpen ? (
+              <HiOutlineX className="menuIcon" />
+            ) : (
+              <HiOutlineMenu className="menuIcon" />
+            )}
+            {isMenuOpen && <Menu isMenuOpen={isMenuOpen} />}
+          </div>
+          <div className="logoContainer">
+            <Link href="/">
+              <img src="/images/logo.png" alt="Moon" className="logo" />
+            </Link>
+          </div>
         </div>
-        <div className="logoContainer">
-          <Link href="/">
-            <img src="/images/logo.png" alt="Moon" className="logo" />
-          </Link>
-        </div>
-      </div>
-    </header>
+      </header>
+    </div>
   );
 }

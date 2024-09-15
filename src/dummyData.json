@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "projectCards": [
+        {
+          "title": "Project 1",
+          "description": "Project 1 description",
+          "desktopImage": "../images/dummySite1.png",
+          "mobileImage": "../images/dummyMobile1.png",
+          "url": "https://example.com/project1",
+          "github": "https://github.com/example/project1"
+        },
+        {
+          "title": "Project 2",
+          "description": "Project 2 description",
+          "desktopImage": "../images/dummySite2.png",
+          "mobileImage": "../images/dummyMobile2.png",
+          "url": "https://example.com/project2",
+          "github": "https://github.com/example/project2"
+        },
+        {
+          "title": "Project 3",
+          "description": "Project 3 description",
+          "desktopImage": "../images/dummySite3.png",
+          "mobileImage": "../images/dummyMobile3.png",
+          "url": "https://example.com/project3",
+          "github": "https://github.com/example/project3"
+        },
+        {
+          "title": "Project 4",
+          "description": "Project 4 description",
+          "desktopImage": "../images/dummySite4.png",
+          "mobileImage": "../images/dummyMobile4.png",
+          "url": "https://example.com/project4",
+          "github": "https://github.com/example/project4"
+        },
+        {
+          "title": "Project 5",
+          "description": "Project 5 description",
+          "desktopImage": "../images/dummySite5.png",
+          "mobileImage": "../images/dummyMobile5.png",
+          "url": "https://example.com/project5",
+          "github": "https://github.com/example/project5"
+        }
+      ]
+    }
+  ]
+}

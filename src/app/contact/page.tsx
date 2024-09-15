@@ -7,6 +7,7 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <div className="container">
+      <title>Contact</title>
       <main className="main">
         <section className="leftColumn">
           <img src="/images/moon.png" alt="Moon" className="moonImage" />

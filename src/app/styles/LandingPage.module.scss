@@ -3,12 +3,15 @@
   flex: 1;
   display: flex;
   flex-direction: row;
+  // display: grid;
+  // grid-template-columns: 2fr 1fr;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
   width: 100%;
   max-width: 100%;
-  margin-top: 80px;
-  padding: 0 60px;
+  padding: 2rem 1rem;
+  font-family: "Poppins", sans-serif;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -37,9 +40,17 @@
     align-items: flex-end;
     max-width: 100%;
 
+    @media screen and (max-width: 768px) {
+      align-items: flex-start;
+    }
+
     .intro {
       max-width: 100%;
       text-align: right;
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
     }
 
     .buttons {
@@ -68,27 +79,26 @@
 
       .projectsButton {
         background-color: $blue-violet;
-        border: none;
+        border: 2px solid $blue-violet;
         color: $white;
       }
     }
 
-    .socialIcons {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-      padding-top: 20px;
-      width: 100%;
-      max-width: 100%;
-      margin-top: auto;
-      justify-content: flex-end;
+    // .socialIcons {
+    //   display: flex;
+    //   flex-direction: row;
+    //   gap: 10px;
+    //   width: 100%;
+    //   max-width: 100%;
+    //   margin-top: auto;
+    //   justify-content: flex-end;
 
-      .socialLinks {
-        text-decoration: none;
-        font-size: 24px;
-        color: $white;
-      }
-    }
+    //   .socialLinks {
+    //     text-decoration: none;
+    //     font-size: 24px;
+    //     color: $white;
+    //   }
+    // }
   }
 }
 

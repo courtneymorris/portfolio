@@ -9,11 +9,15 @@ export default function LandingPage() {
     <div className="container">
       <section>
         <main className="main">
-          <section className="leftColumn">
-            <img src="/images/moon.png" alt="Moon" className="moonImage" />
+          <section className="leftColumn ">
+            <img
+              src="/images/moon.png"
+              alt="Moon"
+              className="moonImage img-fluid"
+            />
           </section>
 
-          <section className="rightColumn">
+          <section className="rightColumn ">
             <section className="intro">
               <div className="boldHeader">Web Development Portfolio</div>
               <div className="outlinedHeader">
@@ -31,7 +35,7 @@ export default function LandingPage() {
                 <button className="projectsButton">View Projects</button>
               </Link>
             </div>
-            <div className="socialIcons">
+            {/* <div className="socialIcons">
               <a
                 className="socialLinks"
                 href="https://instagram.com"
@@ -51,12 +55,12 @@ export default function LandingPage() {
               <a className="socialLinks">
                 <MdContacts />
               </a>
-            </div>
+            </div> */}
           </section>
         </main>
       </section>
 
-      <div className="container">
+      <div>
         <section className="previewSection">
           <div className="outlinedHeader">Check out my work</div>
         </section>
